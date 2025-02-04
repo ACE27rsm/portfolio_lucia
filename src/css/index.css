@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 5;
+  background-color: #e8dece !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Barriecito", cursive;
+}
+
+::-webkit-scrollbar {
+  /* width: 0.4em; */
+  width: 0em;
+  height: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(232, 216, 206);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a9827455;
+  border-radius: 0.2rem;
+  /* outline: 1px solid; */
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+#circle_peach {
+  pointer-events: none;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  clip-path: circle(0% at 50% 50%);
+  width: 3000px;
+  height: 3000px;
+  overflow: hidden;
+  background: #cc5a44;
+  z-index: 500;
+}
+#circle_peach_content {
+  pointer-events: none;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cc5a44;
+  width: 100lvw;
+  height: 100lvh;
+}
+
+.unselect_text {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
