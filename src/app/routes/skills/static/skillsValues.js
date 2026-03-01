@@ -25,7 +25,7 @@ const skills = [
   },
   {
     title: "WordPress",
-    value: 7,
+    value: 8,
   },
 ];
 
