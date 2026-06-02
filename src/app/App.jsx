@@ -61,7 +61,9 @@ const App = () => {
       <CssBaseline />
 
       <Provider store={store}>
-        <BrowserRouter>
+        <BrowserRouter
+          future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+        >
           <Intro>
             <Routes>
               <Route path="*" element={<PageTransition />} />
