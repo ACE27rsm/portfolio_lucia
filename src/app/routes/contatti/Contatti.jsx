@@ -14,8 +14,6 @@ import { colors } from "../../../settings";
 import Layout from "../../layout/Layout";
 import PortfolioButton from "../../layout/components/PortfolioButton";
 
-//=b css
-import "react-image-lightbox/style.css";
 const style = (theme) => ({
   root: {
     display: "flex",

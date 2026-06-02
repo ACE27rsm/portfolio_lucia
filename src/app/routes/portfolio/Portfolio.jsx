@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { Box } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
-import Lightbox from "react-image-lightbox";
+import Lightbox from "yet-another-react-lightbox";
 import { a, useTransition, config } from "@react-spring/web";
 import clsx from "clsx";
 import { motion } from "framer-motion";
@@ -13,7 +13,7 @@ import Layout from "../../layout/Layout";
 import { illustrazioni, siti, allestimenti } from "./static/images";
 
 //=b css
-import "react-image-lightbox/style.css";
+import "yet-another-react-lightbox/styles.css";
 import usePageTransition from "../../layout/components/transition/usePageTransition";
 import { colors } from "../../../settings";
 import useIntro from "../../layout/components/intro/useIntro";
@@ -210,22 +210,13 @@ const Portfolio = ({ classes }) => {
         )}
       </Box>
 
-      {isOpen && (
-        <Lightbox
-          mainSrc={images[photoIndex].hd}
-          nextSrc={images[(photoIndex + 1) % images.length].hd}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length].hd}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex(
-              (prevIndex) => (prevIndex + images.length - 1) % images.length
-            )
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((prevIndex) => (prevIndex + 1) % images.length)
-          }
-        />
-      )}
+      <Lightbox
+        open={isOpen}
+        close={() => setIsOpen(false)}
+        index={photoIndex}
+        on={{ view: ({ index }) => setPhotoIndex(index) }}
+        slides={images.map((image) => ({ src: image.hd }))}
+      />
     </Layout>
   );
 };

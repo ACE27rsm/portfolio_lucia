@@ -11,8 +11,6 @@ import Layout from "../../layout/Layout";
 import skills from "./static/skillsValues";
 import { colors, fonts } from "../../../settings";
 
-//=b css
-import "react-image-lightbox/style.css";
 import usePageTransition from "../../layout/components/transition/usePageTransition";
 const style = (theme) => {
   let height = 100;
