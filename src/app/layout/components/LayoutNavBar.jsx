@@ -1,7 +1,6 @@
 import React, { useState, useEffect, createRef } from "react";
 import { Box } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
-import { withRouter } from "react-router-dom";
 import clsx from "clsx";
 import { a, config, useTransition } from "@react-spring/web";
 
@@ -559,4 +558,4 @@ const LayoutNavBar = ({ classes, location, history }) => {
   );
 };
 
-export default withStyles(style)(withRouter(LayoutNavBar));
+export default withStyles(style)(LayoutNavBar);
