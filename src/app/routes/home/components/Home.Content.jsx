@@ -108,7 +108,7 @@ const HomeContent = () => {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  "-webkit-text-stroke": {
+                  WebkitTextStroke: {
                     xs: `1px ${colors.logoPrimary}`,
                     md: "unset",
                   },

@@ -46,15 +46,11 @@ const NavButton = ({ path }) => {
       }}
       variants={{
         normal: {
-          "-webkit-box-shadow": "5px 5px 0px 0px rgba(130,57,43,1)",
-          "-moz-box-shadow": "5px 5px 0px 0px rgba(130,57,43,1)",
           boxShadow: "5px 5px 0px 0px rgba(130,57,43,1)",
           x: 0,
           y: 0,
         },
         hover: {
-          "-webkit-box-shadow": "0px 0px 0px 0px rgba(130,57,43,1)",
-          "-moz-box-shadow": "0px 0px 0px 0px rgba(130,57,43,1)",
           boxShadow: "0px 0px 0px 0px rgba(130,57,43,1)",
           y: 3,
           x: 3,
