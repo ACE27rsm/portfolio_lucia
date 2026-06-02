@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
 import { Box, Typography, Divider } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
-import VisibilitySensor from "react-visibility-sensor";
+import VisibilitySensor from "../../../utils/VisibilitySensor";
 import clsx from "clsx";
 
 //* components

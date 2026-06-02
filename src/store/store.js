@@ -9,7 +9,11 @@ import { runSaga } from "./middlewares/saga/saga";
 //* reducers
 import reducer from "./reducers/reducer";
 
-const store = configureStore({ reducer, middleware });
+const store = configureStore({
+  reducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(middleware),
+});
 
 export default store;
 
