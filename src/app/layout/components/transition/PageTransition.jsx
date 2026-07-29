@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import { Box } from "@mui/material";
 import gsap from "gsap";
 import React, { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { useTrail, a } from "@react-spring/web";
 
 // * hooks

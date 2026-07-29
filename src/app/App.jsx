@@ -2,7 +2,7 @@ import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { brown } from "@mui/material/colors";
 import React from "react";
 import { Provider } from "react-redux";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router";
 
 //* components
 import PageTransition from "./layout/components/transition/PageTransition";

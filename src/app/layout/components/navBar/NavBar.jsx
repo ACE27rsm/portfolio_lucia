@@ -1,7 +1,7 @@
 import { animate, motion, stagger } from "framer-motion";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Box } from "@mui/material";
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 
 // * statics
 import routes from "../../../../routes";

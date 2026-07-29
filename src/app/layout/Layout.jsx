@@ -63,7 +63,9 @@ const Layout = ({ classes, section, children }) => {
   //=y State
 
   //=? Cycle
-  useEffect(() => window.scrollTo(0, 0), [section]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [section]);
 
   //=+ Handlers
 
